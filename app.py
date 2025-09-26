@@ -63,6 +63,3 @@ if st.button("Predict"):
         else:
             st.success(f"✅ Not Spam (Confidence: {proba:.2f})")
 
-if st.checkbox("Show sample data"):
-    df = load_data()
-    st.dataframe(df.sample(10, random_state=1).reset_index(drop=True))
